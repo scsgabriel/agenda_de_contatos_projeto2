@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="./img-lista-contatos.svg" alt="">
+        </div>
+        <div class="form-contact">
+            <form id="lista-contatos">                   <! pra ter umna action precisa do backend>
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Lista de Contatos</h1>
+                    </div>
+                </div>
+                <div class="input-group">            <! div geral dos inputs>
+                    <div class="inputs-box">
+                        <label for="nome-contato">Nome</label>
+                        <input id="nome-contato" type="text" name="Nome do contato" placeholder="Digite o nome do contato" required>
+                    </div>
+                    <div class="inputs-box">
+                        <label for="numero-contato">Telefone</label>
+                        <input id="numero-contato" type="tel" placeholder="(xx) x xxxx-xxxx" required>
+                    </div>
+                </div>
+                    <div id="buttons">
+                        <div class="button-send">
+                        <button type="submit"> Salvar </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+            <table cellspacing="0">    <!  esse comando no valor 0 retira o espaço que as tabelas têm entre >
+                <thead>
+                    <tr>                                     <! tr é pra colocar conteúdo em uma linha na tabela>
+                        <th> Contato</th>          <! th é um cabeçalho de uma coluna >
+                        <th>Telefone</th> 
+                    </tr> 
+                </thead>
+                <tbody>    
+                        <! td é uma célula de dados; td recebe valores >  
+                    <tr>
+                        <td>  </td>
+                        <td>  </td>  <! a tag span é usada pra manipular algo específico, até mesmo um texto pequeno dentro de um texto grande>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
